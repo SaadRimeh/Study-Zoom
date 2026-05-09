@@ -1,3 +1,5 @@
+const { platformSelect } = require("nativewind/theme");
+
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   // NOTE: Update this to include the paths to all files that contain Nativewind classes.
@@ -5,6 +7,13 @@ module.exports = {
   presets: [require("nativewind/preset")],
   theme: {
     extend: {
+      fontFamily: {
+        mono: platformSelect({
+          ios: "ui-monospace",
+          android: "monospace",
+          default: "monospace",
+        }),
+      },
       colors: {
         primary: "#6C5CE7",
         "primary-dark": "#5A4BD1",
