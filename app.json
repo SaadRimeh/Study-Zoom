@@ -36,6 +36,14 @@
             "imageWidth": 76
           }
         }
+      ],
+      [
+        "@sentry/react-native/expo",
+        {
+          "url": "https://sentry.io/",
+          "project": "study-app",
+          "organization": "codedev-l2"
+        }
       ]
     ],
     "experiments": {
