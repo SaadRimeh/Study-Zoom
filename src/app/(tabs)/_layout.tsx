@@ -14,7 +14,13 @@ const TabsLayout = () => {
   }
 
   return (
-    <NativeTabs>
+    <NativeTabs
+      labelStyle={{
+        default: { fontSize: 12 },
+        selected: { fontSize: 12 },
+      }}
+      tintColor="#6C5CE7"
+    >
       <NativeTabs.Trigger name="index">
         <NativeTabs.Trigger.Label>Chats</NativeTabs.Trigger.Label>
         <NativeTabs.Trigger.Icon
